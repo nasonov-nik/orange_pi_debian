@@ -2,3 +2,12 @@
 deb http://archive.debian.org/debian/ stretch main contrib non-free
 deb http://archive.debian.org/debian/ stretch-proposed-updates main contrib non-free
 deb http://archive.debian.org/debian-security stretch/updates main contrib non-free
+
+
+cat << EOF > /etc/apt/sources.list
+
+deb http://archive.debian.org/debian/ stretch main contrib non-free
+deb http://archive.debian.org/debian/ stretch-proposed-updates main contrib non-free
+deb http://archive.debian.org/debian-security stretch/updates main contrib non-free
+
+EOF
