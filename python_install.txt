@@ -1,0 +1,29 @@
+https://serverspace.ru/support/help/debian-install-python/
+
+Обновление системного ПО операционной системы
+apt-get install sudo -y
+apt-get install aptitude
+aptitude update
+aptitude upgrade
+
+Устанавливаем зависимое ПО, компилируем
+sudo apt install wget software-properties-common
+apt-get install build-essential
+aptitude install build-essential libncursesw5-dev libreadline-gplv2-dev libssl-dev libsqlite3-dev tk-dev libc6-dev libbz2-dev libffi-dev -y
+ 
+Устанавливаем python
+wget https://www.python.org/ftp/python/3.9.18/Python-3.9.18.tgz
+tar xvf Python-3.9.18.tgz
+cd Python-3.9.18
+
+Компилирование
+./configure --enable-optimizations
+make install
+
+Проверка
+python3 -V
+
+
+Удаление временных файлов
+cd .. Rm -rf Python-3.1.* sudo aptitude clean
+
