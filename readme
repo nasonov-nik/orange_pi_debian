@@ -1,13 +1,13 @@
-Обновнление пакетов
-deb http://archive.debian.org/debian/ stretch main contrib non-free
-deb http://archive.debian.org/debian/ stretch-proposed-updates main contrib non-free
-deb http://archive.debian.org/debian-security stretch/updates main contrib non-free
-
-
+Если  не работает Обновнление пакетов
 cat << EOF > /etc/apt/sources.list
-
 deb http://archive.debian.org/debian/ stretch main contrib non-free
 deb http://archive.debian.org/debian/ stretch-proposed-updates main contrib non-free
 deb http://archive.debian.org/debian-security stretch/updates main contrib non-free
-
 EOF
+
+Если не работает dns
+sudo vim /etc/resolv.conf
+ADD
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
